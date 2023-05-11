@@ -12,7 +12,8 @@ public class CarPlateClient
 		CarPlate p1 = new CarPlate( "NY821000C", "New York", "Blue" );
 		CarPlate p2 = new CarPlate( "FL391033D", "Florida", "White" );
 		CarPlate p3 = new CarPlate( "CA31GH0Z", "California", "Black" );
-
+		
+		// Writing into file
 		try
 		{
 			FileOutputStream fos = new FileOutputStream( "objects", false ); // false means we will write to objects
@@ -36,7 +37,8 @@ public class CarPlateClient
 		{
 			ioe.printStackTrace( );
 		}
-
+		
+		// Reading from file
 		ArrayList<CarPlate> plates = new ArrayList<CarPlate>( );
 		try
 		{
